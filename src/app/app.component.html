@@ -1,0 +1,60 @@
+
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <p class="backArrow"><</p>
+      <h2 class="title">Loan Calculator</h2>
+      <span>&#x22EE;</span>
+      
+    </div>
+    <div class="funding">
+      <p style="margin-bottom: 10px;">Maximum Funding</p>
+      <h2>Rp {{ maxFunding | number }}</h2>
+      <p class="loanName">Honda ADV 150 CBS</p>
+      <p class="loanYear">2022</p>
+     
+    </div>
+
+    <div class="slider-section">
+      <p>Loan Amount</p>
+      <h3>Rp {{ loanAmount | number }}</h3>
+      <input
+        type="range"
+        [(ngModel)]="loanAmount"
+        [min]="minLoanAmount"
+        [max]="maxLoanAmount"
+        (input)="updateInstallment()"
+      />
+      <div class="slider-labels">
+        <span>Rp {{ minLoanAmount | number }}</span>
+        <span>Rp {{ maxLoanAmount | number }}</span>
+      </div>
+    </div>
+
+    <div class="slider-section">
+      <p>Loan Period</p>
+      <h3>{{ loanPeriod }} Months</h3>
+      <input
+        type="range"
+        [(ngModel)]="loanPeriod"
+        [min]="minLoanPeriod"
+        [max]="maxLoanPeriod"
+        (input)="updateInstallment()"
+      />
+      <div class="slider-labels">
+        <span>{{ minLoanPeriod }} Months</span>
+        <span>{{ maxLoanPeriod }} Months</span>
+      </div>
+    </div>
+
+    <div class="installment">
+      <p>Estimated Monthly Installments</p>
+      <h2>Rp {{ estimatedInstallment | number }}</h2>
+      <p class="note">
+        Installment fees may change according to the results of the verification of the physical condition of the vehicle at the branch office.
+      </p>
+      <button class="applyLoan() applyButton">APPLY LOAN</button>
+    </div>
+
+  </div>
+</div>

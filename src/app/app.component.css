@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+  }
+  
+  .card {
+    width: 350px;
+    background-color: #1e1e2d;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  .funding, .slider-section{
+    margin: 15px 0;
+    padding: 15px;
+    background: #2a2a3a;
+    border-radius: 8px;
+    height: 120px;
+  }
+  .funding{
+    height: 125px;
+  }
+
+  .installment{
+    margin-top: 40px;
+  }
+
+  h3 {
+    margin-top: 10px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  
+  .note {
+    font-size: 12px;
+    color: #bbb;
+    opacity: 50%;
+  }
+  .applyButton {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #00bcd4;
+    border: none;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #008c9e;
+  }
+  .slider-section,.installment{
+    text-align: left;
+  }
+  .loanName{
+    border-top: 2px solid white;
+    padding-top: 15px;
+    text-align: left;
+    font-size: 10px;
+  }
+  .loanYear{
+    text-align: left;
+  }
+  p{
+    font-size: 10px;
+    opacity: 50%;
+  }
+  span{
+    opacity: 50%;
+  }
+  .backArrow{
+    font-size: 20px;
+  }
+  .title{
+    font-size: 15px;
+    opacity: 50%;
+  }
+  input[type='range']{
+    accent-color: #00bcd4;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+      
